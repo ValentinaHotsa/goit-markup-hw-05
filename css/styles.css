@@ -218,7 +218,7 @@ background-image:
 linear-gradient(to bottom,
         rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)),
-url(/images/hero-bckgrnd.jpg);
+url(../images/hero-bckgrnd.jpg);
 background-repeat: no-repeat;
 background-position: center center;
 max-width: 1440px;
@@ -608,6 +608,7 @@ font-style: normal;
     color: var(--primary-brand-color);
     background-color: var(--light-color);
     padding: 12px 24px;
+    border: none;
     border-color: var(--accent-color);
     border-radius: 4px;
     transition-property: color, background-color, border-color, box-shadow;
@@ -649,7 +650,8 @@ box-shadow:  3px 1px rgba(0, 0, 0, 0.1),
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
 }
-.projects-link:hover
+.projects-link:hover,
+.projects-link:focus
  {
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 transform: translateY(0%);
@@ -683,7 +685,7 @@ transform: translateY(0%);
 .container-portfolio-list {
  
   justify-content: center;
-  margin-bottom: 72px;
+  
    
 }
 .container-projects-border {
@@ -1001,6 +1003,31 @@ position: relative;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-agreement {}
+
+.modal-form-checkbox {}
+.modal-form-checkbox-custom {}
+
+.modal-form-checkbox-icon {}
+.form-agreement-text {
+    font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: 0.48px;
+        color: var(--subtle-text-color);
+}
+.link_privacy_policy {
+    font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: 0.48px;
+        color: var(--primary-brand-color);
+}
+
 .modal-input:hover + .modal-form-icon {
     fill: var(--primary-brand-color);
 }
