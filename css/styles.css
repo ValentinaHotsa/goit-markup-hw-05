@@ -984,6 +984,7 @@ position: relative;
             resize: none;
             padding: 8px 16px;
             margin-bottom: 16px;
+            outline: transparent;
 }
 .modal-textarea::placeholder {
     font-family: Roboto;
@@ -1022,7 +1023,7 @@ position: relative;
     width: 16px;
         height: 16px;
         border-radius: 2px;
-        border: 1px solid var(--hero-overlay-color);
+        border: 1px solid var(--modal-overlay-color);
 transition-property: border-color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1034,6 +1035,8 @@ transition-property: border-color, background-color;
 }
 
 .modal-form-checkbox-icon {
+         
+    
     opacity: 0;
     transition-property: border-color, background-color;
         transition-duration: 250ms;
