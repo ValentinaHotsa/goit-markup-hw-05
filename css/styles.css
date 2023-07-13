@@ -983,6 +983,7 @@ position: relative;
             border: 1px solid var(--modal-overlay-color);
             resize: none;
             padding: 8px 16px;
+            margin-bottom: 16px;
 }
 .modal-textarea::placeholder {
     font-family: Roboto;
@@ -1003,12 +1004,44 @@ position: relative;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-agreement {}
+/* Agreement form */
 
-.modal-form-checkbox {}
-.modal-form-checkbox-custom {}
+.modal-form-agreement {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 24px;
+}
 
-.modal-form-checkbox-icon {}
+
+
+.modal-form-checkbox-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        border: 1px solid var(--hero-overlay-color);
+transition-property: border-color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.modal-form-checkbox:checked+.modal-form-checkbox-custom {
+    border-color: var(--pressed-state-color);
+    background-color: var(--pressed-state-color);
+}
+
+.modal-form-checkbox-icon {
+    opacity: 0;
+    transition-property: border-color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-checkbox:checked + .modal-form-checkbox-custom > .modal-form-checkbox-icon {
+    opacity: 1;
+}
 .form-agreement-text {
     font-family: Roboto;
         font-size: 12px;
