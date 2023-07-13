@@ -507,7 +507,7 @@ fill: var(--light-color);
 
 .container-subscribe-mail {}
 
-.subscribe-label {
+.subscribe-label-p {
     color: var(--white-background-color);
     font-family: Roboto;
     font-size: 16px;
@@ -515,7 +515,8 @@ fill: var(--light-color);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-right: 24px;
+    margin-bottom: 16px;
+    
 
 }
 
@@ -529,7 +530,7 @@ fill: var(--light-color);
     background-color: transparent;
     padding-left: 16px;
     display: flex;
-    margin-top: 16px;
+   margin-right: 24px;
 }
 
 .mail-input::placeholder {
@@ -561,7 +562,7 @@ fill: var(--light-color);
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 40px;
+    
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
