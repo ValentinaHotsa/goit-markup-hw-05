@@ -945,8 +945,10 @@ transition-property: background-color, border;
 .modal-form {
     
 }
-
+.container-modal-label {}
 .modal-label-field {
+    margin-bottom: 4px;
+        display: block;
    
 
 }
@@ -961,8 +963,7 @@ transition-property: background-color, border;
         line-height: 1.17;
         letter-spacing: 0.48px;
         color: var(--modal-overlay-color);
-        margin-bottom: 4px;
-        display: block;
+       
         margin-top: 8px;
        
 }
