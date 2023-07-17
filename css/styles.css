@@ -946,7 +946,7 @@ transition-property: background-color, border;
     
 }
 .container-modal-label {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .modal-label-field {
     margin-bottom: 4px;
@@ -958,12 +958,17 @@ transition-property: background-color, border;
             line-height: 1.17;
             letter-spacing: 0.48px;
             color: var(--modal-overlay-color);
+            color: var(--subtle-text-color);
    
 
 }
+
 .modal-input-item {
     position: relative;
     margin-top: 4px;
+}
+.modal-input {
+
 }
 
        
@@ -981,7 +986,7 @@ transition-property: background-color, border;
         outline: transparent;
         padding-left: 38px;
         font-size: 18px;
-        transition-property: border-color, fill;
+        transition-property: border-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1004,7 +1009,7 @@ transition-property: background-color, border;
     font-style: normal;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.04px;
     color: var(--modal-overlay-color);  
     transition-property: border-color;
         transition-duration: 250ms;
@@ -1023,7 +1028,7 @@ transition-property: background-color, border;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    fill: var(--dark-color);
+    fill: transparent
     transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1056,16 +1061,22 @@ margin-bottom: 24px;
         height: 16px;
         border-radius: 2px;
         border: 1px solid var(--modal-overlay-color);
-transition-property: border-color, background-color;
+transition-property: border, background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
 
 }
 .modal-form-checkbox:checked+.modal-form-checkbox-custom {
     border-color: var(--pressed-state-color);
     background-color: var(--pressed-state-color);
+    border: none;
+    fill: var(--light-color);
 }
-
+.agreement-link
+{
+    color: var(--primary-brand-color);
+}
 .modal-form-checkbox-icon {
          
     
