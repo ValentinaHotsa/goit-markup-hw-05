@@ -945,6 +945,9 @@ transition-property: background-color, border;
 .modal-form {
     
 }
+.container-modal-label-textarea {
+    margin-bottom: 16px;
+}
 .container-modal-label {
     margin-bottom: 8px;
 }
@@ -962,7 +965,6 @@ color: var(--subtle-text-color);
 .modal-input-item {
     position: relative;
     margin-top: 4px;
-    bsc
 }
 
 .modal-input {
@@ -977,9 +979,12 @@ color: var(--subtle-text-color);
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-input:focus + .modal-form-icon {
+    
+    fill: var(--primary-brand-color);
+}
 .modal-input:focus {
     border-color: var(--primary-brand-color);
-    fill: var(--primary-brand-color);
 }
 .modal-textarea {
  width: 100%;
@@ -1011,10 +1016,11 @@ color: var(--modal-overlay-color);
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    fill: transparent;
-    transition-property: fill;
+ transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: var(--dark-color);
+      
 }
 /* Agreement form */
 .container-modal-checkbox {
@@ -1046,7 +1052,8 @@ transition-property: border, background-color, fill;
     fill: transparent;
 
 }
-.modal-form-checkbox:checked .modal-form-checkbox-custom {
+.modal-form-checkbox:checked + .modal-form-agreement .modal-form-checkbox-custom {
+
     background-color: var(--pressed-state-color);
     border: none;
     fill: var(--light-color);
@@ -1056,9 +1063,7 @@ transition-property: border, background-color, fill;
     color: var(--primary-brand-color);
 }
 .modal-form-checkbox-icon {
-         
-    
-    opacity: 0;
+
     transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
