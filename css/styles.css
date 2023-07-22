@@ -223,6 +223,7 @@ background-repeat: no-repeat;
 background-position: center center;
 max-width: 1440px;
 background-size: cover;
+margin: 0 auto;
 }
 
 
@@ -1025,13 +1026,22 @@ color: var(--modal-overlay-color);
 /* Agreement form */
 .container-modal-checkbox {
 margin-bottom: 24px;
+
 }
 .modal-form-agreement {
 font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--subtle-text-color);
+        cursor: pointer;
     
+}
+.modal-form-agreement:hover .modal-form-checkbox-custom {
+    border-color: var(--primary-brand-color);
+}
+.modal-form-agreement:focus .modal-form-checkbox-custom {
+    border-color: var(--primary-brand-color);
+
 }
 .modal-form-checkbox:focus {
     fill: var(--primary-brand-color);
